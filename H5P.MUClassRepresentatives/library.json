@@ -1,0 +1,28 @@
+{
+  "title": "MU Class Representatives",
+  "description": "Class Representatives widget for MU template.",
+  "majorVersion": 1,
+  "minorVersion": 1,
+  "patchVersion": 5,
+  "runnable": 1,
+  "author": "Massey University",
+  "license": "cc-by-sa",
+  "machineName": "H5P.MUClassRepresentatives",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 0
+  },
+  "preloadedJs": [
+    { "path": "mu-class-representatives.js" }
+  ],
+  "preloadedCss": [
+    {"path": "mu-class-representatives.css"}
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+[ 
+  {
+  "name": "reps",
+  "type": "list",
+  "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+  "label": "Class Representatives",
+  "entity": "rep",
+  "min": 1,
+  "max": 20,
+  "field": {
+	  "name": "rep",
+	  "type": "group",
+	  "label": "Representative",
+	  "fields": [
+		{
+		  "name": "image",
+		  "type": "image",
+		  "label": "Profile picture",
+		  "optional": true,
+		  "description": "Picture of class representative.  If left blank a placeholder image will be displayed. Image dimensions should ideally be 150px by 150px to avoid scaling."
+		},
+		{
+		  "name": "name",
+		  "type": "text",
+		  "label": "Name",
+		  "default": "",
+		  "description": "Name of representative"
+		},
+		{
+		  "name": "role",
+		  "type": "text",
+		  "label": "Role",
+		  "optional": true,
+		  "default": "",
+		  "description": "Role of representative e.g., Māori, Distance. Leave blank to not display this field for this rep."
+		},
+		{
+		  "name": "contact",
+		  "type": "text","widget": "html",
+		  "label": "Contact details",
+		  "default": "",
+		  "description": "Contact details.",
+		  "enterMode": "p",
+		  "tags": [
+			  "strong",
+			  "em",
+			  "u",
+			  "a",
+			  "hr"
+		  ]
+		},
+		{
+		  "name": "about",
+		  "type": "text","widget": "html",
+		  "label": "About",
+		  "optional": true,
+		  "default": "",
+		  "description": "Further information about the rep.  Leave blank to not display this field for this rep.",
+		  "enterMode": "p",
+		  "tags": [
+			  "strong",
+			  "em",
+			  "u",
+			  "a",
+			  "hr"
+		  ]
+		}
+	  ]
+	}
+},
+{
+  "name": "layout",
+  "type": "select",
+  "label": "Layout",
+  "description": "Layout of items.",
+  "options": [
+    {
+      "value": "auto",
+      "label": "Auto - Three columns, or two columns if four or less items)"
+    },
+    {
+      "value": "2",
+      "label": "Two columns"
+    },
+    {
+      "value": "3",
+      "label": "Three columns"
+    },
+    {
+      "value": "4",
+      "label": "Four columns"
+    }
+  ],
+  "default": "auto"
+}
+]
