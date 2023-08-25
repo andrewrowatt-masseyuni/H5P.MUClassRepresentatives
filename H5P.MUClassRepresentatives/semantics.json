@@ -22,7 +22,7 @@
 		  "type": "image",
 		  "label": "Profile picture",
 		  "optional": true,
-		  "description": "Picture of class representative.  If left blank a placeholder image will be displayed. Image dimensions should ideally be 150px by 150px to avoid scaling."
+		  "description": "Picture of class representative. If left blank a placeholder image will be displayed. Image dimensions should ideally be 150px by 150px to avoid scaling."
 		},
 		{
 		  "name": "name",
@@ -60,7 +60,7 @@
 		  "label": "About",
 		  "optional": true,
 		  "default": "",
-		  "description": "Further information about the rep.  Leave blank to not display this field for this rep.",
+		  "description": "Further information about the rep. Leave blank to not display this field for this rep.",
 		  "enterMode": "p",
 		  "tags": [
 			  "strong",
